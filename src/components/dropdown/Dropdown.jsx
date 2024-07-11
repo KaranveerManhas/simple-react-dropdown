@@ -15,8 +15,16 @@ export const Dropdown = ({items}) => {
     return (
         <div className="wrapper">
             <label>Should you use a dropdown?</label>
-            <div className="dropdown-wrapper" onMouseEnter={e=>setShowDropdown(true)} onMouseLeave={e=>setShowDropdown(false)}>
-              <div className="selected-item">{selectedItem}</div>
+
+            <div className="dropdown-wrapper" 
+              onMouseEnter={e=>setShowDropdown(true)} 
+              onMouseLeave={e=>setShowDropdown(false)}>
+
+              <div className="selected-item">
+                {selectedItem}
+                <img src="/images/arrow.png" alt="down-arrow" className="dropdown-arrow" />
+              </div>
+
               {showDropdown && <div className="dropdown-items-container" >
                   {items.map((item) =>
                       <div onClick={e=>handleSelectDropDownItem(item)} className="dropdown-item">

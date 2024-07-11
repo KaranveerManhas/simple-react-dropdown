@@ -4,12 +4,15 @@
     position: relative;
 }
 
+.dropdown-wrapper{
+    padding: 10px;
+}
 
 .selected-item {
     width: 330px;
     height: 30px;
     padding: 20px;
-    margin: 10px;
+    padding-top: 15px;
     border-radius: 5px;
     background-color: #fff;
     color: #000;
@@ -22,7 +25,6 @@
     top: 120px;
     left: 10px;
     width: 370px;
-    /* padding: 10px; */
     background: #fff;
     color: #000;
     border-radius: 5px;
@@ -30,8 +32,22 @@
     cursor: pointer;
 }
 
+.dropdown-arrow {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 70px;
+    right: 30px;
+    transform: rotate(180deg);
+    transition: all 0.3s ease-in-out;
+}
+
+.dropdown-wrapper:hover .dropdown-arrow {
+    transform: rotate(0deg);
+}
+
 .dropdown-item {
-    padding: 5px;
+    padding: 10px;
 }
 
 .dropdown-item:hover {

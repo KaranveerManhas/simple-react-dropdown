@@ -1,13 +1,16 @@
+/* Main wrapper */
 .wrapper {
     display: flex;
     flex-direction: column;
     position: relative;
 }
 
+/* Dropdown wrapper */
 .dropdown-wrapper{
     padding: 10px;
 }
 
+/* Selected item div */
 .selected-item {
     width: 330px;
     height: 30px;
@@ -20,6 +23,7 @@
     cursor: pointer;
   }
 
+  /* Dropdown item container */
 .dropdown-items-container{
     position: absolute;
     top: 120px;
@@ -32,6 +36,7 @@
     cursor: pointer;
 }
 
+/* Dropdown arrow on the right end of selected item div */
 .dropdown-arrow {
     position: absolute;
     width: 25px;
@@ -41,6 +46,7 @@
     transform: rotate(180deg);
     transition: all 0.3s ease-in-out;
 }
+
 
 .dropdown-wrapper:hover .dropdown-arrow {
     transform: rotate(0deg);

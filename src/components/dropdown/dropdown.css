@@ -1,0 +1,39 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+
+.selected-item {
+    width: 330px;
+    height: 30px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+    text-align: left;
+    cursor: pointer;
+  }
+
+.dropdown-items-container{
+    position: absolute;
+    top: 120px;
+    left: 10px;
+    width: 370px;
+    /* padding: 10px; */
+    background: #fff;
+    color: #000;
+    border-radius: 5px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.dropdown-item {
+    padding: 5px;
+}
+
+.dropdown-item:hover {
+    background-color: #4BB543;
+}
